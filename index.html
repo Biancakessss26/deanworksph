@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DeanworksMarketing - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #fdf6d4, #0ABAB5);
+      color: #2f2f2f;
+      padding: 0 50px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 20px;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #2f2f2f;
+      font-weight: 500;
+      transition: color 0.3s ease, border-bottom 0.3s ease;
+      padding-bottom: 3px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #ff4b2b;
+      border-bottom: 2px solid #ff4b2b;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 80px;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h2 {
+      font-size: 48px;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      padding: 14px 28px;
+      border: none;
+      border-radius: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+   .hero-img img {
+  margin-top: -40px;
+  max-width: 500px;
+  animation: glowBreath 3s ease-in-out infinite;
+}
+
+/* Breathing Glow Keyframes */
+@keyframes glowBreath {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.9));
+    transform: scale(1.03);
+  }
+}
+
+    @keyframes logoZoomIn {
+      0% {
+        opacity: 3;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.php">Products</a>
+      <a href="contact.php">Contact Us</a>
+      <a href="login.php">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Deanworks –<br>We print for you!</h2>
+      <p>"Hello and welcome to our official website! Your satisfaction is our priority—message us anytime!"</p>
+      <button class="btn">Explore</button>
+    </div>
+    <div class="hero-img">
+      <!-- ✅ Animated Logo -->
+      <img src="images/dw.png" alt="Deanworks logo" />
+    </div>
+  </section>
+</body>
+</html>

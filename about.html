@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deanworks - About</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #fffdf5;
+      color: #333;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    /* ✅ Header */
+    header {
+  background-color: #0ABAB5;
+  padding: 10px 50px;  /* smaller vertical padding to compensate */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 120px; /* fix header height */
+  overflow: visible; /* allow logo to overflow */
+}
+
+.dean img {
+  height: 170px; /* bigger than header height */
+  width: auto;
+  margin-top: -8; /* move it up so it overlaps */
+  display: block;
+  object-fit: contain;
+}
+
+    .nav-links ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    /* ✅ Fixed hover and active (same as Index) */
+    .nav-links a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease, border-bottom 0.3s ease;
+      padding-bottom: 3px;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #ff4b2b;
+      border-bottom: 2px solid #ff4b2b;
+    }
+
+    /* ✅ About Section */
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      margin-top: 40px;
+    }
+
+    .about-card {
+      max-width: 700px;
+      background-color: #f1f1f1;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .about-card h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .about-card p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .about-btn {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: inline-block;
+    }
+
+    .about-btn:hover {
+      background-color: #ffffff;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #0ABAB5;
+      color: rgb(76, 75, 75);
+      text-align: center;
+      padding: 15px 20px;
+      font-size: 0.9rem;
+      width: 100%;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .about-card {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="dean">
+      <img src="images/dw.png" alt="Deanworks company logo" />
+    </div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="products.php">Products</a></li>
+        <li><a href="contact.php">Contact Us</a></li>
+        <a href="login.php">Login</a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <div class="about-card">
+        <h2>We Print for You!</h2>
+        <p>
+          Deanworks specializes in high-quality, customizable corporate giveaways, souvenirs, BTL ads,
+          and printed marketing materials. Combining expert craftsmanship with advanced technology,
+          we deliver standout products that boost brand visibility and leave a lasting impression.
+        </p>
+        <a href="products.php" class="about-btn">Our Projects </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Deanworks. All rights reserved.
+  </footer>
+</body>
+</html>
